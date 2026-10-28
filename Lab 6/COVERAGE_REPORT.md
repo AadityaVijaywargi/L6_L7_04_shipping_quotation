@@ -23,7 +23,9 @@ coverage run -m pytest CodeCoverageTest_shipping_quote.py
 coverage report -m
 ```
 
-Result: **8 tests passed, line coverage 100%** (53/53 statements). Screenshot: `screenshots/code_coverage.png`
+Result: **8 tests passed, line coverage 100%** (53/53 statements).
+
+![Code coverage terminal output](screenshots/code_coverage.png)
 
 | Test | Statements targeted |
 |------|---------------------|
@@ -46,7 +48,9 @@ coverage run --branch -m pytest BranchCoverageTest_shipping_quote.py
 coverage report -m
 ```
 
-Result: **38 tests passed, branch coverage 100%** (36/36 branches, 0 partial). Screenshot: `screenshots/branch_coverage.png`
+Result: **38 tests passed, branch coverage 100%** (36/36 branches, 0 partial).
+
+![Branch coverage terminal output](screenshots/branch_coverage.png)
 
 Tests are named by the source line of the decision they drive (`b<line>` for `process_shipments`, `m<line>` for `monitor_container_pressures`). Each decision gets at least one test for its True outcome and one for its False outcome:
 
